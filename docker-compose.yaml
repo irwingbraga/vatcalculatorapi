@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  vatcalculatorapi:
+    image: vatcalculatorapi:latest
+    build:
+      context: .
+      dockerfile: VatCalculator.Api/Dockerfile
+    ports:
+      - "5000:80"
